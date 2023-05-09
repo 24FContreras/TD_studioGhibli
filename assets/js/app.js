@@ -25,6 +25,8 @@ fetch(urlAPIbase)
     dataArray.forEach((item) => {
       if (item.title === "The Tale of the Princess Kaguya") {
         htmlOpciones += `<option value="the tale of princess kaguya">${item.title}</option>`;
+      } else if (item.title === "How Do You Live?") {
+        htmlOpciones += `<option value="how do you live%3F">${item.title}</option>`;
       } else
         htmlOpciones += `<option value="${item.title.toLowerCase()}">${
           item.title
